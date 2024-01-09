@@ -10,7 +10,7 @@ public class DummyFile {
 			String str = scan.nextLine();								//memo:数値入力
 										
 			InputCheck ic = new InputCheck(str);							
-			if(ic.isNumeric()) { 										//memo : 数字であるかチェック						
+			if(ic.isNumeric()) { 										//memo:数字であるかチェック						
 				if(ic.checkSize()) {									//memo:9桁以内かつ100MB以下だったらtrueを返すメソッド							
 					int fileSize = Math.abs(Integer.parseInt(str));		//memo:入力値を絶対値にする				
 					if(CreateFile.createDummyFile(fileSize)) {			//memo:ファイルが作成できたら				
